@@ -1,5 +1,8 @@
 <img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/67ae06cc-d147-481a-b0d0-84759e40ba7a" /># 3D LiDAR Scanner (TF-Luna + VL53L1X + ESP32 + MPU6050)
 
+
+
+
 This project is a **custom DIY 3D LiDAR system** built using:
 - **TF-Luna** (long-range TOF sensor – for main distance)
 - **VL53L1X** (short-range TOF sensor – second layer scan)
