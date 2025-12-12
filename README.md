@@ -21,6 +21,8 @@ The system scans **360° horizontally** and **~30° vertically**, creating a sim
 ## 📸 System Overview
 
 ### ✔ Xiao-seeed ESP32s3s:
+- <img width="241" height="209" alt="image" src="https://github.com/user-attachments/assets/c39b294e-2260-4756-8af9-dd8d16b718de" />
+
 - Reads **VL53L1X distance**
 - Reads **Real Yaw + Real Pitch** from **MPU6050**
 - Sends data wirelessly to the PC:
@@ -68,12 +70,12 @@ Example string received:
 ## 🔌 Hardware Wiring
 
 ### 1. TF-Luna → Arduino UNO
-- TX → Pin 10
-- RX → Pin 11
+- PIN 2 → SDA (A4)
+- PIN 3 → SCL (A5)
 - 5V → 5V
 - GND → GND
 
-### 2. VL53L1X → ESP32
+### 2. VL53L1X → Xiao Seeed ESP32s3
 - SDA → GPIO 21
 - SCL → GPIO 22
 - 3.3V → 3.3V
@@ -84,11 +86,11 @@ Example string received:
 - SCL → 22 (shared)
 
 ### 4. Stepper Motor
-- Driven by **ULN2003** board
-- Pulsed by **555 timer + CD4017**
-
-### 5. IR Sensor
-- Output → ESP32 GPIO for zero-point reset
+- Driven by **TB6600** board
+- PUL → PIN 3
+- DIR → PIN 4
+- sw1, sw2, sw3, sw4, sw5
+- off, on, on, on, on, on
 
 ---
 
@@ -105,6 +107,7 @@ Example string received:
 ---
 
 ## 📷 Demo / Screenshots
+<img width="1068" height="748" alt="image" src="https://github.com/user-attachments/assets/e293adc8-3d37-448c-a01b-e1846b6fd846" />
 
 ---
 
